@@ -5,25 +5,25 @@ import {
     StyleSheet,
 } from 'react-native';
 
-export default function Balance({ balance, expenses}) {
+export default function Balance({ balance, expenses }) {
     return (
         <View style={styles.container}>
-           
-           <View style={styles.item}>
-            <Text style={styles.itemTitle}>Balance</Text>
-                <View style={styles.content}>   
+
+            <View style={styles.item}>
+                <Text style={styles.itemTitle}>Balance</Text>
+                <View style={styles.content}>
                     <Text style={styles.currentSymbol}>R$</Text>
                     <Text style={styles.balance}>{balance}</Text>
                 </View>
-           </View>
-           
-           <View style={styles.item}>
-            <Text style={styles.itemTitle}>Expenses</Text>
+            </View>
+
+            <View style={styles.item}>
+                <Text style={styles.itemTitle}>Expenses</Text>
                 <View style={styles.content}>
                     <Text style={styles.currentSymbol}>R$</Text>
                     <Text style={styles.expenses}>-{expenses}</Text>
                 </View>
-           </View>
+            </View>
         </View>
     );
 }
