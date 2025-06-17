@@ -2,6 +2,7 @@ import {FlatList, StyleSheet, Text, View} from 'react-native';
 import Header from '../../components/Header';
 import Balance from '../../components/Balance';
 import Movements from '../../components/Movements';
+import Actions from "../../components/Actions";
 
 const list = [
     {
@@ -33,6 +34,8 @@ export default function Home() {
             <Header name="Samuel Holanda"/>
 
             <Balance balance="20.654,00" expenses="500,00"/>
+
+            <Actions/>
 
             <Text style={styles.title}>Latest Movements</Text>
 
